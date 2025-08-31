@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptGenie AI Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        .last-updated {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .important {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .language-btn:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 600px) {
+            .language-switch {
+                position: relative;
+                top: 0;
+                right: 0;
+                text-align: right;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <button class="language-btn" onclick="window.location.href='privacy_policy.html'">中文</button>
+    </div>
+    <h1>ScriptGenie AI Privacy Policy</h1>
+    <p class="last-updated"><em>Last Updated: August 31, 2025</em></p>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to ScriptGenie ("we", "our", or "extension"). ScriptGenie AI is a Chrome browser extension designed to enable users to generate Tampermonkey-compatible browser scripts through natural language interactions with large language models. We highly value your privacy and are committed to protecting your personal information. This Privacy Policy aims to explain how we collect, use, store, and protect your information.</p>
+    </div>
+
+    <div class="section">
+        <h2>Information Collection and Use</h2>
+        
+        <h3>Information We Collect</h3>
+        <ol>
+            <li>
+                <strong>User-Provided Information</strong>:
+                <ul>
+                    <li>Large language model API keys you configure (such as DeepSeek, Claude, OpenAI, Silicon Flow, OpenRouter, etc.)</li>
+                    <li>Script content and related configuration information you create</li>
+                    <li>Your conversation content and chat history with AI assistants</li>
+                    <li>Script URL matching patterns and execution settings</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Automatically Collected Information</strong>:
+                <ul>
+                    <li>Current browsing page URL and title (used only for script matching and execution)</li>
+                    <li>Extension usage data (such as feature usage frequency, error reports)</li>
+                    <li>Script execution status and performance data</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Purpose of Information Use</h3>
+        <p>The information we collect is used only for the following purposes:</p>
+        <ul>
+            <li>Providing, maintaining, and improving our extension functionality</li>
+            <li>Executing browser scripts you create</li>
+            <li>Conducting necessary API communications with the AI model providers you choose</li>
+            <li>Resolving technical issues and enhancing user experience</li>
+            <li>Ensuring scripts execute on the correct web pages</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Data Storage</h2>
+        
+        <h3>Local Storage</h3>
+        <p>All user data is stored on your local device and managed using the Chrome.storage API:</p>
+        <ul>
+            <li>API keys and model configuration information are stored locally and are not uploaded to our servers</li>
+            <li>Scripts and conversation history you create are saved in local storage</li>
+            <li>Script snapshots, version history, and personalized settings are saved only on your device</li>
+            <li>Tab script matching information is temporarily stored locally</li>
+        </ul>
+
+        <h3>Third-Party Services</h3>
+        <p>When you use the extension to interact with AI models, your prompts and conversation content will be sent to the third-party AI service providers you configure (such as OpenAI, Claude, etc.). These transmissions are subject to the privacy policies of the respective service providers. We recommend that you review these service providers' privacy policies to understand how they handle your data.</p>
+        
+        <div class="important">
+            <p><strong>Important Note</strong>: We do not collect, store, or transmit your API keys to our servers. All API keys are stored and used only on your local device.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Data Security</h2>
+        <p>We highly value your data security and take the following comprehensive measures to protect your information:</p>
+        <ul>
+            <li><strong>Sensitive Information Protection</strong>: Sensitive information such as API keys are masked when displayed (showing only the last 4 digits), ensuring that complete keys are not exposed even during screen sharing</li>
+            <li><strong>Minimal Permissions Principle</strong>: We strictly adhere to the principle of minimal permissions, requesting only permissions necessary for the extension's functionality and not requesting additional permissions unrelated to functionality</li>
+            <li><strong>Local Data Storage</strong>: All user data is stored only on your local device; we do not transfer or store your personal data on our servers</li>
+            <li><strong>Secure Storage Mechanism</strong>: We use Chrome's secure storage API to protect local data and prevent unauthorized access</li>
+            <li><strong>Sandbox Execution Environment</strong>: All scripts are executed in a secure sandbox environment provided by Chrome to prevent malicious code execution</li>
+            <li><strong>Data Encryption</strong>: Sensitive information stored locally is encrypted, adding an extra layer of security</li>
+            <li><strong>Regular Security Reviews</strong>: We regularly review the extension code to ensure there are no security vulnerabilities</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Permissions</h2>
+        <p>This extension requires the following permissions, strictly adhering to the principle of minimal permissions, requesting only necessary permissions to provide core functionality:</p>
+        
+        <ul>
+            <li><strong>storage</strong>: This permission is used to securely store your scripts, API configurations, and conversation history on your local device. We do not upload this data to any servers; all data is saved only on your device.</li>
+            
+            <li><strong>activeTab</strong>: This permission allows the extension to access information about the current tab only when you actively interact with the extension. We use this permission to obtain the URL and title of the current webpage to determine whether to execute your created scripts. The extension does not continuously monitor your browsing activity in the background.</li>
+            
+            <li><strong>scripting</strong>: This permission allows the extension to execute scripts you create on web pages. We only execute scripts on websites you explicitly authorize, and the script content is completely under your control.</li>
+            
+            <li><strong>tabs</strong>: This permission is used to manage tabs and display script execution status. We use this permission to ensure scripts execute on the correct tabs and to provide visual feedback on script execution status.</li>
+            
+            <li><strong>notifications</strong>: This permission is used to send you notifications when scripts complete execution or when errors occur. All notifications are generated locally and do not send any data to external servers.</li>
+            
+            <li><strong>contextMenus</strong>: This permission is used to provide right-click menu functionality, allowing you to quickly access extension features on specific web pages. We do not use this permission to collect any personal data.</li>
+            
+            <li><strong>host_permissions</strong> (<strong>&lt;all_urls&gt;</strong>): This permission allows the extension to execute scripts on websites you visit. We only execute scripts on websites you explicitly configure, and all script execution is under your complete control. You can modify or delete any script's URL matching patterns at any time.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>User Rights and Control</h2>
+        <p>As a user, you have complete control over your data, including the following specific rights:</p>
+        <ul>
+            <li><strong>Right to Data Access</strong>: You can access all your data stored in the extension at any time through the extension's settings page, including scripts, configurations, and conversation history</li>
+            <li><strong>Right to Data Deletion</strong>: You can easily delete any scripts, snapshots, and conversation history you create through the extension interface; deletion operations are immediate and permanent</li>
+            <li><strong>Right to Data Modification</strong>: You can modify or update your API keys, script content, and other configuration information at any time; all changes take effect immediately</li>
+            <li><strong>Right to Extension Uninstallation</strong>: You can uninstall the extension at any time, which will automatically remove all locally stored data from your device without leaving any traces</li>
+            <li><strong>Right to Feature Control</strong>: You can enable or disable any extension functionality at any time through the extension settings, precisely controlling the extension's behavior</li>
+            <li><strong>Right to Data Export</strong>: You can export your created scripts and configurations for backup or migration to other devices</li>
+            <li><strong>Right to Transparency</strong>: We are committed to transparency in data processing; you can understand how the extension handles your data at any time</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Cookie Usage</h2>
+        <p>The ScriptGenie extension itself does not use cookies. However, when you visit websites that use cookies, the scripts you create may interact with these cookies. These interactions are subject to the cookie policies of the respective websites.</p>
+    </div>
+
+    <div class="section">
+        <h2>Children's Privacy</h2>
+        <p>The ScriptGenie extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will take steps to delete this information.</p>
+    </div>
+
+    <div class="section">
+        <h2>Data Retention</h2>
+        <ul>
+            <li>Your data will be retained on your device until you actively delete it or uninstall the extension</li>
+            <li>When you uninstall the extension, all locally stored data will be automatically deleted</li>
+            <li>We do not retain any of your data on our servers</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Privacy Policy Updates</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make significant changes to the Privacy Policy, we will:</p>
+        <ul>
+            <li>Display a prominent notice in the extension informing you that the policy has been updated</li>
+            <li>Provide a comparison of old and new versions on the extension's settings page</li>
+            <li>Give you sufficient time to review the changes</li>
+            <li>Ensure the updated policy complies with the latest legal and regulatory requirements</li>
+        </ul>
+        <p>The updated Privacy Policy will take effect immediately upon posting. We encourage you to review this Privacy Policy periodically to understand how we protect your information. Continued use of our extension will be considered acceptance of the updated terms.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, comments, or suggestions regarding this Privacy Policy, or if you wish to exercise your data rights, please contact us through the following methods:</p>
+        <ul>
+            <li>Email: <a href="mailto:scriptgenieai@outlook.com">scriptgenieai@outlook.com</a></li>
+            <li>GitHub Issues: <a href="https://github.com/scriptgenieai/Feedback/issues" target="_blank">https://github.com/scriptgenieai/Feedback/issues</a></li>
+        </ul>
+        <p>We commit to responding to your request within 15 business days of receiving it.</p>
+    </div>
+
+    <div class="section">
+        <h2>Compliance Statement</h2>
+        <p>The ScriptGenie extension complies with all applicable data protection laws and regulations, including but not limited to:</p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR)</li>
+            <li>California Consumer Privacy Act (CCPA)</li>
+            <li>Chrome Web Store Developer Program Policies</li>
+        </ul>
+        <p>We are dedicated to protecting your privacy rights and ensuring our privacy practices meet the highest standards.</p>
+    </div>
+
+    <div class="section">
+        <h2>Consent</h2>
+        <p>By installing and using the ScriptGenie extension, you acknowledge that you have read and agree to the practices and policies described in this Privacy Policy. If you do not agree to any part of this Privacy Policy, please do not use this extension.</p>
+    </div>
+</body>
+</html>
