@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#16213e" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#00d4ff" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- 应用窗口背景 -->
+  <rect x="50" y="50" width="700" height="500" rx="20" ry="20" fill="url(#bgGradient)" />
+  
+  <!-- 窗口顶部栏 -->
+  <rect x="50" y="50" width="700" height="40" rx="20" ry="20" fill="#2a2a4a" />
+  <circle cx="80" cy="70" r="8" fill="#ff5f57" />
+  <circle cx="105" cy="70" r="8" fill="#febc2e" />
+  <circle cx="130" cy="70" r="8" fill="#28c840" />
+  
+  <!-- 左侧边栏 -->
+  <rect x="50" y="100" width="200" height="450" fill="#2a2a4a" />
+  
+  <!-- 脚本列表 -->
+  <rect x="70" y="130" width="160" height="40" rx="5" ry="5" fill="#3a3a5a" />
+  <rect x="70" y="170" width="160" height="40" rx="5" ry="5" fill="#3a3a5a" />
+  <rect x="70" y="220" width="160" height="40" rx="5" ry="5" fill="url(#accentGradient)" />
+  <rect x="70" y="270" width="160" height="40" rx="5" ry="5" fill="#3a3a5a" />
+  
+  <!-- 左侧标题 -->
+  <text x="150" y="120" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Script List</text>
+  
+  <!-- 编辑器区域 -->
+  <rect x="250" y="100" width="300" height="450" fill="#1e1e3f" />
+  
+  <!-- 代码行 -->
+  <rect x="250" y="100" width="30" height="450" fill="#2d2b55" />
+  
+  <!-- 行号 -->
+  <text x="265" y="130" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">1</text>
+  <text x="265" y="155" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">2</text>
+  <text x="265" y="180" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">3</text>
+  <text x="265" y="205" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">4</text>
+  <text x="265" y="230" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">5</text>
+  <text x="265" y="255" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">6</text>
+  <text x="265" y="280" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">7</text>
+  <text x="265" y="305" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">8</text>
+  <text x="265" y="330" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">9</text>
+  <text x="265" y="355" font-family="monospace" font-size="12" fill="#565656" text-anchor="middle">10</text>
+  
+  <!-- 代码内容 -->
+  <text x="290" y="130" font-family="monospace" font-size="12" fill="#ff7edb">// ==UserScript==</text>
+  <text x="290" y="155" font-family="monospace" font-size="12" fill="#ff7edb">// @name         Form Auto-Fill Assistant</text>
+  <text x="290" y="180" font-family="monospace" font-size="12" fill="#ff7edb">// @namespace    http://tampermonkey.net/</text>
+  <text x="290" y="205" font-family="monospace" font-size="12" fill="#ff7edb">// @version      1.0</text>
+  <text x="290" y="230" font-family="monospace" font-size="12" fill="#ff7edb">// @description  Auto-fill web forms</text>
+  <text x="290" y="255" font-family="monospace" font-size="12" fill="#ff7edb">// @author       ScriptGenie AI</text>
+  <text x="290" y="280" font-family="monospace" font-size="12" fill="#ff7edb">// @match        https://example.com/*</text>
+  <text x="290" y="305" font-family="monospace" font-size="12" fill="#ff7edb">// @grant        none</text>
+  <text x="290" y="330" font-family="monospace" font-size="12" fill="#ff7edb">// ==/UserScript==</text>
+  <text x="290" y="355" font-family="monospace" font-size="12" fill="#c3a6ff">(function() {</text>
+  
+  <!-- 右侧AI对话区域 -->
+  <rect x="550" y="100" width="200" height="450" fill="#2a2a4a" />
+  
+  <!-- 对话标题 -->
+  <text x="650" y="120" font-family="Arial" font-size="16" fill="white" text-anchor="middle">AI Assistant</text>
+  
+  <!-- 模型选择下拉菜单 -->
+  <rect x="560" y="130" width="180" height="30" rx="5" ry="5" fill="#3a3a5a" />
+  <text x="575" y="150" font-family="Arial" font-size="12" fill="white">Model: </text>
+  <rect x="620" y="135" width="110" height="20" rx="3" ry="3" fill="#1e1e3f" />
+  <text x="630" y="150" font-family="Arial" font-size="12" fill="#00d4ff">GPT-4</text>
+  <polygon points="720,140 730,140 725,150" fill="white" />
+  
+  <!-- 模型选择下拉列表 -->
+  <rect x="620" y="155" width="110" height="80" rx="3" ry="3" fill="#1e1e3f" stroke="#3a3a5a" stroke-width="1" />
+  <text x="630" y="170" font-family="Arial" font-size="11" fill="white">GPT-4</text>
+  <text x="630" y="190" font-family="Arial" font-size="11" fill="white">Claude 3</text>
+  <text x="630" y="210" font-family="Arial" font-size="11" fill="white">Gemini Pro</text>
+  <text x="630" y="230" font-family="Arial" font-size="11" fill="white">Llama 3</text>
+  
+  <!-- 对话气泡 -->
+  <rect x="560" y="240" width="180" height="60" rx="10" ry="10" fill="#3a3a5a" />
+  <rect x="560" y="310" width="180" height="60" rx="10" ry="10" fill="url(#accentGradient)" />
+  <rect x="560" y="380" width="180" height="60" rx="10" ry="10" fill="#3a3a5a" />
+  
+  <!-- 输入框 -->
+  <rect x="560" y="450" width="180" height="40" rx="10" ry="10" fill="#3a3a5a" />
+  <rect x="560" y="500" width="180" height="30" rx="15" ry="15" fill="url(#accentGradient)" />
+  <text x="650" y="520" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Send</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="400" cy="30" r="200" fill="url(#accentGradient)" opacity="0.05" />
+  <circle cx="700" cy="500" r="150" fill="#ff00e5" opacity="0.05" />
+  
+  <!-- 光效 -->
+  <circle cx="400" cy="300" r="5" fill="#00d4ff" filter="url(#glow)" opacity="0.8" />
+  <circle cx="200" cy="400" r="3" fill="#ff00e5" filter="url(#glow)" opacity="0.6" />
+  <circle cx="600" cy="200" r="4" fill="#6c63ff" filter="url(#glow)" opacity="0.7" />
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#00d4ff" />
+    </linearGradient>
+    <filter id="techGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="0" y="0" width="600" height="400" fill="transparent" />
+  
+  <!-- 中心圆 -->
+  <circle cx="300" cy="200" r="80" fill="url(#techGradient)" opacity="0.2" />
+  <circle cx="300" cy="200" r="70" fill="url(#techGradient)" opacity="0.3" />
+  <circle cx="300" cy="200" r="60" fill="url(#techGradient)" opacity="0.4" />
+  
+  <!-- 中心图标 -->
+  <circle cx="300" cy="200" r="50" fill="#1a1a2e" stroke="url(#techGradient)" stroke-width="2" />
+  <text x="300" y="205" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">ScriptGenie</text>
+  
+  <!-- React -->
+  <circle cx="450" cy="150" r="40" fill="#1a1a2e" stroke="#61DAFB" stroke-width="2" />
+  <text x="450" y="155" font-family="Arial" font-size="12" fill="white" text-anchor="middle">React</text>
+  <path d="M300,200 L450,150" stroke="#61DAFB" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- TypeScript -->
+  <circle cx="450" cy="250" r="40" fill="#1a1a2e" stroke="#007ACC" stroke-width="2" />
+  <text x="450" y="255" font-family="Arial" font-size="12" fill="white" text-anchor="middle">TypeScript</text>
+  <path d="M300,200 L450,250" stroke="#007ACC" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Zustand -->
+  <circle cx="150" cy="150" r="40" fill="#1a1a2e" stroke="#FF7EDB" stroke-width="2" />
+  <text x="150" y="155" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Zustand</text>
+  <path d="M300,200 L150,150" stroke="#FF7EDB" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Ant Design -->
+  <circle cx="150" cy="250" r="40" fill="#1a1a2e" stroke="#F74455" stroke-width="2" />
+  <text x="150" y="255" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Ant Design</text>
+  <path d="M300,200 L150,250" stroke="#F74455" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Monaco Editor -->
+  <circle cx="300" cy="80" r="40" fill="#1a1a2e" stroke="#0078D7" stroke-width="2" />
+  <text x="300" y="85" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Monaco</text>
+  <path d="M300,200 L300,80" stroke="#0078D7" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Chrome Extension API -->
+  <circle cx="300" cy="320" r="40" fill="#1a1a2e" stroke="#4285F4" stroke-width="2" />
+  <text x="300" y="320" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Chrome</text>
+  <text x="300" y="335" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Extension</text>
+  <path d="M300,200 L300,320" stroke="#4285F4" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- 装饰元素 -->
+  <circle cx="300" cy="200" r="120" fill="transparent" stroke="url(#techGradient)" stroke-width="1" stroke-dasharray="2,4" />
+  <circle cx="300" cy="200" r="180" fill="transparent" stroke="url(#techGradient)" stroke-width="1" stroke-dasharray="2,4" />
+  
+  <!-- 光效 -->
+  <circle cx="300" cy="200" r="3" fill="white" filter="url(#techGlow)" />
+  <circle cx="450" cy="150" r="2" fill="#61DAFB" filter="url(#techGlow)" />
+  <circle cx="450" cy="250" r="2" fill="#007ACC" filter="url(#techGlow)" />
+  <circle cx="150" cy="150" r="2" fill="#FF7EDB" filter="url(#techGlow)" />
+  <circle cx="150" cy="250" r="2" fill="#F74455" filter="url(#techGlow)" />
+  <circle cx="300" cy="80" r="2" fill="#0078D7" filter="url(#techGlow)" />
+  <circle cx="300" cy="320" r="2" fill="#4285F4" filter="url(#techGlow)" />
+</svg>
