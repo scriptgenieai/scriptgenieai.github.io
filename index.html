@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page_title">ScriptGenie AI - AI驱动的浏览器脚本生成器</title>
+  <meta name="description" data-i18n="page_description" content="ScriptGenie AI是一个革命性的Chrome扩展程序，它将AI大语言模型的强大能力与浏览器脚本开发相结合，让普通用户无需编程知识即可创建功能强大的浏览器自动化脚本。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/icon128.png" alt="ScriptGenie AI Logo">
+        <h1 class="logo-text">ScriptGenie AI</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#features" data-i18n="nav_features">核心功能</a></li>
+          <li><a href="#use-cases" data-i18n="nav_use_cases">应用场景</a></li>
+          <li><a href="#download" data-i18n="nav_download">立即下载</a></li>
+          <li><a href="https://github.com/scriptgenieai/scriptgenie/wiki" target="_blank" rel="noopener noreferrer" data-i18n="nav_docs">文档</a></li>
+        </ul>
+      </nav>
+      <div class="language-switch">
+        <button class="active" data-lang="zh">中文</button>
+        <button data-lang="en">English</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title logo-text" data-i18n="hero_title">AI驱动的浏览器脚本生成器</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">让AI为您创建强大的浏览器自动化脚本，无需编程知识</p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary" data-i18n="btn_download">立即下载</a>
+          <a href="#features" class="btn btn-secondary" data-i18n="btn_learn_more">了解更多</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-illustration.svg" alt="ScriptGenie界面展示">
+      </div>
+    </div>
+    <div class="hero-particles" id="particles-js"></div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="features_title">核心功能</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 data-i18n="feature_ai_gen">AI智能生成</h3>
+          <p data-i18n="feature_ai_gen_desc">支持OpenAI、Claude、DeepSeek等多种AI模型，通过自然语言描述生成专业脚本</p>
+        </div>
+          <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 data-i18n="feature_matching">兼容Tampermonkey</h3>
+          <p data-i18n="feature_matching_desc">完整兼容Tampermonkey URL匹配规则，自动执行相关脚本</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 data-i18n="feature_editor">专业编辑器</h3>
+          <p data-i18n="feature_editor_desc">集成Monaco Editor，提供语法高亮、智能提示、代码折叠等专业功能</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3 data-i18n="feature_version">版本管理</h3>
+          <p data-i18n="feature_version_desc">专业级快照系统，支持版本回退和重要版本固定</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 data-i18n="feature_i18n">国际化支持</h3>
+          <p data-i18n="feature_i18n_desc">支持多语言扩展</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3 data-i18n="feature_security">安全可靠</h3>
+          <p data-i18n="feature_security_desc">本地存储，API Key加密保护，用户数据安全</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <h2 class="section-title" data-i18n="use_cases_title">适用场景</h2>
+      <div class="use-cases-grid">
+        <div class="use-case-card">
+          <div class="use-case-icon">
+            <i class="fas fa-spider"></i>
+          </div>
+          <h3 data-i18n="use_case_automation">网页自动化</h3>
+          <p data-i18n="use_case_automation_desc">自动填表、数据抓取、页面监控</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 data-i18n="use_case_ux">用户体验优化</h3>
+          <p data-i18n="use_case_ux_desc">去广告、样式调整、功能增强</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3 data-i18n="use_case_productivity">工作效率提升</h3>
+          <p data-i18n="use_case_productivity_desc">重复操作自动化、批量处理</p>
+        </div>
+        <div class="use-case-card">
+          <div class="use-case-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 data-i18n="use_case_learning">学习研究</h3>
+          <p data-i18n="use_case_learning_desc">网页行为分析、API调用学习</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技术栈部分已移除 -->
+
+  <section class="download" id="download">
+    <div class="container">
+      <h2 class="section-title" data-i18n="download_title">立即下载</h2>
+      <div class="download-options">
+        <a href="https://chromewebstore.google.com/detail/scriptgenie-ai/hogmlmglhijddadgjjcbhehfiejpbeac" target="_blank" rel="noopener noreferrer" class="download-option">
+          <img src="images/chrome-store.svg" alt="Chrome Web Store">
+          <span>Chrome Web Store</span>
+        </a>
+        <a href="https://github.com/scriptgenieai/scriptgenie/releases" target="_blank" rel="noopener noreferrer" class="download-option">
+          <img src="images/github.svg" alt="GitHub">
+          <span>GitHub Releases</span>
+        </a>
+      </div>
+      <div class="download-instructions">
+        <h3 data-i18n="installation_guide">安装指南</h3>
+        <div class="installation-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <p data-i18n="install_step1">下载扩展程序</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <p data-i18n="install_step2">打开Chrome扩展管理页面</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <p data-i18n="install_step3">启用开发者模式</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <p data-i18n="install_step4">加载已解压的扩展程序</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/icon128.png" alt="ScriptGenie AI Logo">
+          <h2>ScriptGenie AI</h2>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h3 data-i18n="product">产品</h3>
+            <ul>
+              <li><a href="#features" data-i18n="nav_features">核心功能</a></li>
+              <li><a href="#use-cases" data-i18n="nav_use_cases">应用场景</a></li>
+              <li><a href="#download" data-i18n="nav_download">下载</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3 data-i18n="resources">资源</h3>
+            <ul>
+              <li><a href="https://github.com/scriptgenieai/scriptgenie/wiki" target="_blank" rel="noopener noreferrer" data-i18n="documentation">文档</a></li>
+              <li><a href="https://github.com/scriptgenieai/scriptgenie/wiki#common-issues" target="_blank" rel="noopener noreferrer" data-i18n="faq">常见问题</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h3 data-i18n="about_us">关于我们</h3>
+            <ul>
+              <li><a href="#" data-i18n="contact_us">联系我们</a></li>
+              <li><a href="#" data-i18n="privacy_policy">隐私政策</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="copyright">&copy; 2024 ScriptGenie AI. 保留所有权利。</p>
+        <div class="social-links">
+          <a href="https://github.com/scriptgenieai" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
